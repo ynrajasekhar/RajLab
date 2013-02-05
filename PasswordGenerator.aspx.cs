@@ -9,7 +9,7 @@ namespace RajLab
 {
     public partial class PasswordGenerator : System.Web.UI.Page
     {
-        readonly char[] _chars = "abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+        readonly char[] _chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".ToCharArray();
         protected void Page_Load(object sender, EventArgs e)
         {
         }
@@ -31,11 +31,12 @@ namespace RajLab
         private string GetRandomPassword(int seed,int length)
         {
             string password = string.Empty;
-
             var random = new Random(seed + DateTime.Now.Millisecond);
             for (int i = 0; i < length; i++)
             {
-                var x = random.Next(1, _chars.Length);//Don't Allow Repetation of Characters 
+                int len = _chars.Length;
+                if (i == 0) len = len - 10;
+                var x = random.Next(1, len);
                 if (!password.Contains(_chars.GetValue(x).ToString()))
                     password += _chars.GetValue(x);
                 else
