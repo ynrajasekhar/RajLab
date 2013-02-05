@@ -14,28 +14,34 @@
         <div class="header">
             <div class="title">
                 <h1>
-                    Online Utilities
+                    Raj's Lab
                 </h1>
             </div>
             <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
-                         <asp:MenuItem NavigateUrl="~/PasswordGenerator.aspx" Text="Password Generator" />
-                        <asp:MenuItem NavigateUrl="~/GuidGenerator.aspx" Text="Guid Generator" />
-                        <asp:MenuItem NavigateUrl="~/ColorConverter.aspx" Text="Color Converter" />
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                        <asp:MenuItem Text="Utils">
+                            <asp:MenuItem NavigateUrl="~/PasswordGenerator.aspx" Text="Password Generator" />
+                            <asp:MenuItem NavigateUrl="~/GuidGenerator.aspx" Text="Guid Generator" />
+                            <asp:MenuItem NavigateUrl="~/ColorConverter.aspx" Text="Color Converter" />
+                        </asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
         </div>
         <div class="main">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            <p>
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>
+            </p>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
         </div>
         <div class="clear">
         </div>
     </div>
     <div class="footer">
-        
     </div>
     </form>
 </body>

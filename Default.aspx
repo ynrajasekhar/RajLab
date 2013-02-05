@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Welcome to RajLab
+        Welcome to Raj's Lab
     </h2>
     <p>
         This application contains various utilites

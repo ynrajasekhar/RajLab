@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" title="Home"  description="">
+      <siteMapNode title="Utils"  description="">
+        <siteMapNode url="PasswordGenerator.aspx" title="Password Generator"  description="" />
+        <siteMapNode url="GuidGenerator.aspx" title="Guid Generator"  description="" />
+        <siteMapNode url="ColorConverter.aspx" title="Color Converter"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>
