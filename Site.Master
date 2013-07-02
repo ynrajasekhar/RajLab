@@ -19,7 +19,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
 
-</script>
+    </script>
 </head>
 <body>
     <form runat="server">
@@ -40,6 +40,7 @@
                             <asp:MenuItem NavigateUrl="~/GuidGenerator.aspx" Text="Guid Generator" />
                             <asp:MenuItem NavigateUrl="~/ColorConverter.aspx" Text="Color Converter" />
                         </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UrlSharerDemo.aspx" Text="UrlSharer Demo" />
                     </Items>
                 </asp:Menu>
             </div>

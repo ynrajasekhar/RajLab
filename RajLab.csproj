@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastImage">
+      <HintPath>..\UrlSharer\UrlSharer\bin\Debug\FastImage.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\UrlSharer\UrlSharer\bin\Debug\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -49,6 +55,9 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="UrlSharer">
+      <HintPath>..\UrlSharer\UrlSharer\bin\Debug\UrlSharer.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
@@ -59,13 +68,20 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="ColorConverter.aspx" />
     <Content Include="GuidGenerator.aspx" />
+    <Content Include="Images\ajax-loader.gif" />
     <Content Include="PasswordGenerator.aspx" />
+    <Content Include="Scripts\additional-methods.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="UrlSharerDemo.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -148,6 +164,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UrlSharerDemo.aspx.cs">
+      <DependentUpon>UrlSharerDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrlSharerDemo.aspx.designer.cs">
+      <DependentUpon>UrlSharerDemo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
