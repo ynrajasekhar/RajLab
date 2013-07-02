@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>UrlSharer</id>
+    <version>1.0.0.0</version>
+    <title>UrlSharer</title>
+    <authors>Rajasekhar</authors>
+    <owners>Rajasekhar</owners>
+    <licenseUrl>https://github.com/ynrajasekhar/UrlSharer/blob/master/MIT-LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ynrajasekhar/UrlSharer</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>gets title, description, thumbnail images for an url, to use in facebook like linkshare</description>
+    <releaseNotes>First commit</releaseNotes>
+    <copyright>Copyright © Rajasekhar Reddy 2013</copyright>
+    <dependencies>
+      <dependency id="FastImage" version="1.0.0.0" />
+      <dependency id="HtmlAgilityPack" version="1.4.6" />
+    </dependencies>
+  </metadata>
+</package>

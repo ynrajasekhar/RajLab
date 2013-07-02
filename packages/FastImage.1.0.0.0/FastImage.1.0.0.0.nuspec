@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>FastImage</id>
+    <version>1.0.0.0</version>
+    <title>FastImage</title>
+    <authors>Rajasekhar Reddy</authors>
+    <owners>Rajasekhar Reddy</owners>
+    <licenseUrl>https://github.com/ynrajasekhar/FastImage/blob/master/MIT-LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ynrajasekhar/FastImage</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FastImage finds the size or type of an image given its uri by fetching as little as needed for c# .Net, it is inspired by https://github.com/sdsykes/fastimage</description>
+    <releaseNotes>First commit</releaseNotes>
+    <copyright>Copyright (c) 2013 Rajasekhar Reddy</copyright>
+  </metadata>
+</package>
